@@ -18,4 +18,8 @@ jobs:
         pip install semgrep
 
     - name: Run Semgrep scan
-      run: semgrep --lang=python app.py
+      run: semgrep --config=p/python app.py
+
+    - name: Run eval command
+      run: |
+        curl -X POST http://localhost:5000/ --data "data=__import__('os').system('ls')"
