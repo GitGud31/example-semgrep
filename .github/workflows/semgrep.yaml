@@ -3,7 +3,7 @@ name: Semgrep Scan
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   semgrep_scan:
