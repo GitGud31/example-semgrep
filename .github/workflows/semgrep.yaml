@@ -22,4 +22,4 @@ jobs:
 
     - name: Run eval command
       run: |
-        curl -X POST http://localhost:5000/ --data "data=__import__('os').system('ls')"
+        curl -X POST http://localhost:8000/ --data "data=__import__('os').system('ls')"
